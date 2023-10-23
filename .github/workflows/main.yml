@@ -24,7 +24,8 @@ jobs:
             
       - name: Execute app 
         run: |
-          python3 api_calculadora.py
+          python3 api_calculadora.py &
+          phython3 calculadora.py &
        
       - name: Test API
         run: |
