@@ -29,25 +29,25 @@ jobs:
        
       - name: Test API
         run: |
-          if curl -s http://localhost:5000/suma/7/10 | grep -q '17'; then
+          if curl -s http://localhost:5000/suma/7/10 | grep -q "17"; then
             echo "Suma correcta."
           else
             echo "Suma incorrecta."
             exit 1
           fi
-           if curl -s http://localhost:5000/resta/10/7 | grep -q '3'; then
+           if curl -s http://localhost:5000/resta/10/7 | grep -q "3"; then
             echo "Resta correcta."
           else
             echo "Resta incorrecta."
             exit 1
           fi
-           if curl -s http://localhost:5000/multiplica/7/10 | grep -q '70'; then
+           if curl -s http://localhost:5000/multiplica/7/10 | grep -q "70"; then
             echo "Multiplicacion correcta."
           else
             echo "Multiplicacion incorrecta."
             exit 1
           fi
-           if curl -s http://localhost:5000/divideix/2/10 | grep -q '5'; then
+           if curl -s http://localhost:5000/divideix/2/10 | grep -q "5"; then
             echo "Division correcta."
           else
             echo "Division incorrecta."
